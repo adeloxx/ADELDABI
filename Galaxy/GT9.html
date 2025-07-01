@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>갤럭시 탭 S9 시리즈 | 삼성 공식</title>
+  <style>
+    :root {
+      --graphite: #23272f;
+      --beige: #f5f4f2;
+      --gold: #c8b08b;
+      --white: #fff;
+      --overlay: rgba(35, 39, 47, 0.32);
+    }
+    body {
+      font-family: 'SamsungOne', 'Segoe UI', '맑은 고딕', Arial, sans-serif;
+      background: var(--white);
+      margin: 0;
+      padding: 0;
+      color: var(--graphite);
+    }
+    .container {
+      max-width: 700px;
+      margin: 60px auto 40px auto;
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(35,39,47,0.06);
+      padding: 48px 24px 40px 24px;
+    }
+    .main-title {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: var(--graphite);
+      text-align: center;
+      letter-spacing: -1px;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 32px;
+      font-weight: 500;
+    }
+    .common-info {
+      font-size: 1.08rem;
+      color: var(--graphite);
+      background: var(--beige);
+      border-radius: 10px;
+      padding: 18px 16px;
+      margin-bottom: 40px;
+      text-align: center;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+    .products {
+      display: flex;
+      flex-direction: column;
+      gap: 36px;
+      align-items: center;
+    }
+    .product-card {
+      position: relative;
+      width: 100%;
+      max-width: 420px;
+      border-radius: 16px;
+      overflow: hidden;
+      background: var(--white);
+      box-shadow: 0 2px 12px rgba(35,39,47,0.06);
+      transition: box-shadow 0.18s, transform 0.18s;
+      cursor: pointer;
+      text-decoration: none;
+      margin: 0 auto;
+    }
+    .product-card:hover {
+      box-shadow: 0 8px 32px rgba(200,176,139,0.13);
+      transform: translateY(-4px) scale(1.015);
+    }
+    .product-img-wrap {
+      position: relative;
+      width: 100%;
+      height: 220px;
+      background: #f7f7f7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-img {
+      max-width: 90%;
+      max-height: 180px;
+      object-fit: contain;
+      z-index: 1;
+      filter: drop-shadow(0 2px 8px rgba(35,39,47,0.06));
+      transition: filter 0.18s;
+    }
+    .overlay {
+      position: absolute;
+      left: 0; top: 0; right: 0; bottom: 0;
+      background: var(--overlay);
+      z-index: 2;
+      opacity: 0;
+      transition: opacity 0.22s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .product-card:hover .overlay {
+      opacity: 1;
+    }
+    .product-info {
+      position: absolute;
+      left: 0; right: 0; bottom: 0;
+      z-index: 3;
+      padding: 32px 0 18px 0;
+      background: linear-gradient(0deg, rgba(35,39,47,0.72) 0%, rgba(35,39,47,0.0) 100%);
+      color: var(--white);
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.22s;
+      pointer-events: none;
+    }
+    .product-card:hover .product-info {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .product-name {
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      letter-spacing: -0.5px;
+      color: var(--white);
+      text-shadow: 0 2px 8px rgba(35,39,47,0.12);
+    }
+    .view-btn {
+      display: inline-block;
+      background: var(--gold);
+      color: var(--graphite);
+      font-size: 1.05rem;
+      font-weight: 600;
+      padding: 12px 38px;
+      border-radius: 8px;
+      text-decoration: none;
+      box-shadow: 0 2px 8px rgba(200,176,139,0.10);
+      transition: background 0.18s, color 0.18s;
+      border: none;
+      outline: none;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+    .view-btn:hover {
+      background: var(--graphite);
+      color: var(--gold);
+    }
+    .product-label {
+      text-align: center;
+      font-size: 1.18rem;
+      font-weight: 600;
+      color: var(--graphite);
+      margin: 18px 0 10px 0;
+      letter-spacing: -0.5px;
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 12px 2vw;
+      }
+      .product-card {
+        max-width: 98vw;
+      }
+      .product-img-wrap {
+        height: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="main-title">갤럭시 탭 S9 시리즈</div>
+    <div class="subtitle">당신의 일상과 완벽하게 연결되는 태블릿</div>
+    <div class="common-info">
+      갤럭시 탭 s9은 스냅드래곤 8Gen2 와 AMOLED 2X 디스플레이를 바탕으로 게임부터 작업까지 당신에게 최상의 경험을 선사합니다. 지금 혁신의 태블릿 s9으로, 새로운 기준을 만나보세요. 
+    </div>
+    <div class="products">
+      <!-- S9 -->
+      <a class="product-card" href="GT9_S9.html">
+        <div class="product-img-wrap">
+          <img class="product-img" src="C:\Users\ADMIN\Desktop\갤럭시탭s9.png" alt="갤럭시 탭 S9">
+          <div class="overlay">
+            <div class="product-info">
+              <span class="view-btn">자세히 보기</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">갤럭시 탭 S9</div>
+      </a>
+      <!-- S9+ -->
+      <a class="product-card" href="GT9_S9Plus.html">
+        <div class="product-img-wrap">
+          <img class="product-img" src="C:\Users\ADMIN\Desktop\갤럭시탭s9+.png" alt="갤럭시 탭 S9+">
+          <div class="overlay">
+            <div class="product-info">
+              <span class="view-btn">자세히 보기</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">갤럭시 탭 S9+</div>
+      </a>
+      <!-- S9 Ultra -->
+      <a class="product-card" href="GT9_S9Ultra.html">
+        <div class="product-img-wrap">
+          <img class="product-img" src="C:\Users\ADMIN\Desktop\갤럭시탭s9 Ultra.png" alt="갤럭시 탭 S9 Ultra">
+          <div class="overlay">
+            <div class="product-info">
+              <span class="view-btn">자세히 보기</span>
+            </div>
+          </div>
+        </div>
+        <div class="product-label">갤럭시 탭 S9 Ultra</div>
+      </a>
+    </div>
+  </div>
+</body>
+</html> 

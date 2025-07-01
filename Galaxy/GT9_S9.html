@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>갤럭시 탭 S9 | 새로운 일상, 새로운 혁신</title>
+  <style>
+    :root {
+      --graphite: #23272f;
+      --beige: #e9e4da;
+      --gold: #c8b08b;
+      --white: #fff;
+      --blue: #007aff;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', '맑은 고딕', Arial, sans-serif;
+      background: var(--white);
+      margin: 0;
+      padding: 0;
+      color: var(--graphite);
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      background: var(--white);
+      border-radius: 20px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      padding: 48px 32px 40px 32px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 32px;
+      color: var(--graphite);
+      background: var(--beige);
+      padding: 8px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.2s;
+      font-size: 0.9rem;
+    }
+    .back-link:hover {
+      background: #f5f3ef;
+    }
+    .main-title {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: var(--graphite);
+      margin-bottom: 8px;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+    .slogan {
+      font-size: 1.5rem;
+      color: var(--gold);
+      text-align: center;
+      margin-bottom: 40px;
+      font-weight: 400;
+    }
+    .hero-img {
+      display: block;
+      margin: 0 auto 48px auto;
+      max-width: 90%;
+      border-radius: 20px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+    }
+    .features {
+      margin-bottom: 48px;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .feature-item {
+      background: var(--beige);
+      border-radius: 16px;
+      padding: 24px 28px;
+      font-size: 1.1rem;
+      font-weight: 500;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .feature-item:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    }
+    .feature-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--graphite);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      font-size: 1.2rem;
+      font-weight: 600;
+      flex-shrink: 0;
+    }
+    .compare-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 48px;
+      font-size: 1rem;
+      background: var(--white);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    }
+    .compare-table th, .compare-table td {
+      border: none;
+      padding: 16px 20px;
+      text-align: left;
+    }
+    .compare-table th {
+      background: var(--graphite);
+      color: var(--white);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    .compare-table td {
+      background: var(--beige);
+      border-bottom: 1px solid #e5e5e7;
+    }
+    .compare-table tr:last-child td {
+      border-bottom: none;
+    }
+    .review-section {
+      margin-bottom: 48px;
+    }
+    .review-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      color: var(--graphite);
+    }
+    .review-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .review-item {
+      background: var(--beige);
+      border-radius: 12px;
+      padding: 20px 24px;
+      font-size: 1rem;
+      color: var(--graphite);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+      font-style: italic;
+    }
+    .cta-banner {
+      background: linear-gradient(135deg, var(--graphite) 0%, #2d2d30 100%);
+      color: var(--white);
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-bottom: 0;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    }
+    .cta-btn {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 16px 48px;
+      background: var(--beige);
+      color: var(--graphite);
+      border-radius: 12px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .cta-btn:hover {
+      background: var(--graphite);
+      color: var(--beige);
+    }
+    @media (max-width: 700px) {
+      .container {
+        padding: 24px 16px;
+      }
+      .main-title {
+        font-size: 2.4rem;
+      }
+      .hero-img {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="back-link" href="GT9.html">← 메인으로 돌아가기</a>
+    <div class="main-title">갤럭시 탭 S9</div>
+    <div class="slogan">당신의 일상에 혁신을 더하다</div>
+    <img class="hero-img" src="C:\Users\ADMIN\Desktop\갤럭시탭s9.png" alt="갤럭시 탭 S9 사용 장면">
+    <ul class="features">
+      <li class="feature-item">
+        <div class="feature-icon">D</div>
+        <div>11" Dynamic AMOLED 2X 디스플레이로 생생한 화질과 부드러운 화면 전환</div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">P</div>
+        <div>퀄컴 스냅드래곤 8 Gen 2 프로세서로 강력한 멀티태스킹</div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">S</div>
+        <div>초저지연 S펜으로 자연스러운 필기와 드로잉</div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">W</div>
+        <div>IP68 등급 방수/방진 지원, 어디서나 안심</div>
+      </li>
+      <li class="feature-item">
+        <div class="feature-icon">B</div>
+        <div>대용량 배터리와 초고속 충전 지원</div>
+      </li>
+    </ul>
+    <table class="compare-table">
+      <tr><th>항목</th><th>갤럭시 탭 S9</th><th>이전 세대</th></tr>
+      <tr><td>디스플레이</td><td>11" Dynamic AMOLED 2X</td><td>11" LCD</td></tr>
+      <tr><td>프로세서</td><td>스냅드래곤 8 Gen 2</td><td>스냅드래곤 8 Gen 1</td></tr>
+      <tr><td>S펜</td><td>초저지연, IP68 방수</td><td>기본 S펜</td></tr>
+      <tr><td>방수/방진</td><td>IP68</td><td>미지원</td></tr>
+    </table>
+    <div class="review-section">
+      <div class="review-title">실제 사용자 후기</div>
+      <ul class="review-list">
+        <li class="review-item">"화질이 정말 선명해서 영화 볼 때 감동이 두 배!"</li>
+        <li class="review-item">"S펜 필기감이 종이에 쓰는 것처럼 자연스러워요."</li>
+        <li class="review-item">"배터리가 오래가서 하루 종일 걱정 없이 사용합니다."</li>
+      </ul>
+    </div>
+    <div class="cta-banner">
+      지금 갤럭시 탭 S9과 함께 새로운 일상을 시작하세요!<br>
+      <a href="#" class="cta-btn">구매하러 가기</a>
+    </div>
+  </div>
+</body>
+</html> 
